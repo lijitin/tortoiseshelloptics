@@ -1,0 +1,38 @@
+html{
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica, sans-serif;
+}
+
+.site-container{
+  width: 960px;
+  margin: 0 auto;
+}
+/* header: logo+nav*/
+header .site-container{
+  margin-top: 1rem;
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+}
+.logo{
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+
+  flex-grow: 1;
+}
+.logo img{
+  height: 1.5rem;
+}
+.logo span{
+  padding-left: 1rem;
+  color: white;
+}
+header .site-container nav{
+  padding: 1rem 0;
+}
+nav span{
+  color: white;
+  padding-right: 2rem;
+}
