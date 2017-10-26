@@ -24,7 +24,7 @@ header .company{
   align-items: center;
 }
 .logo{
-  padding-left: 2rem;
+  padding: 1rem 2rem;
   display: flex;
   align-items: center;
 
@@ -79,7 +79,7 @@ nav span{
   align-items: center;
 }
 .image-container img{
-  width: 100%;
+  width: 5rem;
   height: auto;
 }
 .image-container.exams img{
@@ -119,4 +119,92 @@ footer{
 }
 footer .logo span{
   color: black;
+}
+
+/* media queries */
+@media only screen and (max-width: 1024px){
+  .site-container{
+    width:100%;
+  }
+  nav span{
+    display: none;
+  }
+  .max-width470{
+    display: inline-block;
+  }
+  header{
+    padding-top: 0;
+    height: 22rem;
+  }
+  .content{
+    margin-top: 5rem;
+    margin-right: 2rem;
+    padding: 0.75rem 4rem;
+  }
+  .content h1{
+    font-size: 1.33rem;
+  }
+}
+
+.max-width470{
+  display: none;
+}
+@media only screen and (max-width: 470px){
+  .logo span{
+    display: none;
+  }
+  nav span{
+    display: none;
+  }
+  .max-width470{
+    display: inline-block;
+  }
+  header{
+    background-position: 20%;
+    height: 17rem;
+  }
+  .content{
+    margin-top: 9rem;
+    margin-right: 0;
+    width: 100%;
+    padding: 1rem 0;
+  }
+  .content h1{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .key-images{
+    margin: 3.77rem auto;
+    flex-wrap: wrap;
+  }
+  .key{
+    margin-top: 1.54rem;
+    height: 6rem;
+  }
+  .supporting-info{
+    display: block;
+  }
+  .info{
+    width: 100%;
+  }
+  .title{
+    width: 100%;
+    padding: 1.25rem 0;
+  }
+  .title h2{
+    text-align: center;
+  }
+  .description{
+    font-size: 0.77rem;
+    padding-bottom: 4rem;
+    line-height: 1.2rem;
+  }
+  .supporting-info{
+    margin: 0;
+  }
+  footer .logo{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
 }
